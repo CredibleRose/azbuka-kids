@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#7cc8ff">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Весёлая Азбука</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect x='6' y='6' width='88' height='88' rx='24' fill='%23ffa94d' stroke='%232b2d42' stroke-width='8'/%3E%3Ctext x='50' y='72' font-size='60' font-family='Arial' font-weight='900' text-anchor='middle' fill='%23fff'%3EА%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scenery" aria-hidden="true">
+    <div class="sun"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <svg class="hills" viewBox="0 0 1200 160" preserveAspectRatio="none">
+      <path d="M0 90 C150 20 300 30 420 80 C540 130 640 40 800 50 C960 60 1060 120 1200 70 L1200 160 L0 160Z" fill="#9be38c" stroke="#2b2d42" stroke-width="5"/>
+      <path d="M0 130 C200 80 380 100 560 125 C740 150 900 90 1200 115 L1200 160 L0 160Z" fill="#69c95a" stroke="#2b2d42" stroke-width="5"/>
+    </svg>
+  </div>
+
+  <div id="app" aria-live="polite"></div>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <div id="toasts" role="status"></div>
+
+  <noscript>Для работы азбуки включите JavaScript.</noscript>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
